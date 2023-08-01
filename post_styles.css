@@ -1,0 +1,172 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "source sans 3", sans-serif;
+}
+
+/* styling top logo and nav links */
+
+.header-flex-container,
+.nav-links,
+.logo {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-link {
+  list-style: none;
+  margin-right: 0.6em;
+  font-weight: bold;
+  font-size: 0.65em;
+}
+
+.logo {
+  margin: 1em;
+}
+
+h2 {
+  font-size: 1em;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:visited {
+  color: black;
+}
+a:link {
+  color: black;
+}
+
+.hero {
+  width: 100%;
+  height: 320px;
+  background-image: url("/blog-image-hero.png");
+  background-size: cover;
+  color: white;
+  margin: 0 auto;
+}
+
+.hero-heading {
+  font-size: 1.25em;
+  font-weight: bold;
+  max-width: 300px;
+}
+
+p {
+  margin: 0;
+}
+
+.hero-text-margin {
+  padding: 2em 0 0 0;
+}
+
+.nav-home {
+  margin: 2em;
+}
+
+/* main image style */
+.hero-img {
+  width: 93%;
+  height: auto;
+  display: block;
+  margin: 1.25em auto;
+}
+
+.about-me {
+  line-height: 1.5;
+  font-size: 17px;
+}
+
+.post-text {
+  padding-left: 0.75em;
+  padding-bottom: 0.25rem;
+}
+
+/* styling posts */
+p {
+  margin: 0;
+}
+
+.posts-grid {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.post-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 90%;
+  max-width: 425px;
+  margin: 2em auto 0 auto;
+}
+
+.post-date {
+  padding: 0.75em 0 0.75em 0;
+}
+
+.post-nr {
+  padding-bottom: 0.25em;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+/* 
+styling footer and media q */
+
+.footer {
+  width: 100%;
+  background-color: black;
+  color: white;
+  text-align: center;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 2em;
+}
+
+.recent-posts {
+  font-weight: bold;
+  text-align: center;
+  padding-top: 2em;
+  font-size: 1.05em;
+}
+
+@media (min-width: 650px) {
+  h2 {
+    font-size: 1.25em;
+  }
+
+  .nav-link {
+    font-size: 0.9em;
+    margin-right: 1em;
+  }
+
+  .hero-p {
+    font-size: 1.15em;
+    max-width: 900px;
+    padding-bottom: 0.5em;
+    padding-right: 5em;
+  }
+
+  .hero-heading {
+    font-size: 1.85em;
+    max-width: 90%;
+    padding-bottom: 0.5em;
+  }
+
+  .post-text {
+    padding-left: 6em;
+  }
+
+  .about-me {
+    max-width: 90%;
+    padding-right: 3em;
+  }
+}
